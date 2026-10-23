@@ -35,7 +35,7 @@ function App() {
     formData.append('lang', targetLang);
 
     try {
-      const response = await fetch('https://dashboard.render.com/web/srv-dbdmnetg1s2s73c1f250/deploys/dep-dbdmuda9lscs73canlh0?r=2026-10-23%4014%3A28%3A09%7E2026-10-23%4014%3A33%3A54', {
+      const response = await fetch('https://translate-j7t4.onrender.com', {
         method: 'POST',
         body: formData,
       });
