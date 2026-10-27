@@ -35,10 +35,10 @@ function App() {
     formData.append('lang', targetLang);
 
     try {
-      const response = await fetch('https://dashboard.render.com/web/srv-dbdmnetg1s2s73c1f250/deploys/dep-dbdmuda9lscs73canlh0?r=2026-10-23%4014%3A28%3A09%7E2026-10-23%4014%3A33%3A54', {
-        method: 'POST',
-        body: formData,
-      });
+    const response = await fetch('https://translate-j7t4.onrender.com/api/translate-image', {
+    method: 'POST',
+    body: formData,
+    });
 
       if (!response.ok) {
         throw new Error('伺服器處理失敗，狀態碼：' + response.status);
